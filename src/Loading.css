@@ -1,0 +1,61 @@
+.loading {
+    /* Adjust position, dimensions, and background color as needed */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+    display: flex; /* Center content vertically and horizontally */
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Ensure loading screen appears above other components */
+  }
+  
+  .loading.active {
+    /* Change opacity to make loading screen disappear smoothly */
+    opacity: 0;
+    transition: opacity 1s ease-out;
+  }
+  
+  .loader {
+    /* Adjust animation style and colors */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 8px solid #f3f3f3; /* Light gray border */
+    border-top: 8px solid #3498db; /* Blue top for animation */
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .inner {
+    /* Style inner elements for the animation */
+    position: absolute;
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+  }
+  
+  .inner.one {
+    left: 0;
+    top: 0;
+    background-color: #a8d6e4; /* Light blue */
+  }
+  
+  .inner.two {
+    right: 0;
+    top: 0;
+    background-color: #4CAF50; /* Green */
+  }
+  
+  .inner.three {
+    right: 0;
+    bottom: 0;
+    background-color: #f39c12; /* Orange */
+  }

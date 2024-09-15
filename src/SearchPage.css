@@ -1,0 +1,92 @@
+/* General page styles */
+.searchPage {
+    font-family: 'Roboto', sans-serif;
+    margin: 20px auto;
+    max-width: 1000px;
+    background-color: #4586ab1c; /* Light background color */
+    border-radius: 10px;
+    border: 1px solid #4586ab;
+    padding: 30px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    color: #333; /* Default font color */
+}
+
+/* Header styling */
+.searchPage__header {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #4586ab;
+}
+
+.searchPage__header h1 {
+    font-size: 26px;
+    color: #1a73e8; /* Same font color as the previous page */
+    text-align: center;
+}
+
+/* Result section inside the main box */
+.searchPage__results {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Individual result card inside the box */
+.searchPage__result {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.searchPage__result:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Result titles */
+.searchPage__result h2 {
+    font-size: 22px;
+    color: #333; /* Main content font color */
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+/* Water footprint information */
+.searchPage__result p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555; /* Subtle gray for descriptions */
+}
+
+.searchPage__result p strong {
+    color: #1a73e8; /* Highlight for important data */
+}
+
+/* No results message */
+.searchPage__noResults {
+    text-align: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    color: #555;
+    font-size: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .searchPage {
+        padding: 20px;
+    }
+
+    .searchPage__result h2 {
+        font-size: 20px;
+    }
+
+    .searchPage__result p {
+        font-size: 15px;
+    }
+}

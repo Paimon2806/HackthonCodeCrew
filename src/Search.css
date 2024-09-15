@@ -1,0 +1,136 @@
+/* Container for the search input */
+.search_input {
+    display: flex;
+    align-items: center;
+    background-color: #4586ab1c; /* Dark background for the search bar */
+    border-radius: 25px; /* Rounded corners */
+    padding: 7px 15px;
+    border: 2px solid rgba(56, 118, 130, 0.607);
+    box-shadow: 0px 0px 7px rgba(24, 69, 93, 0.479); /* Subtle shadow for the search bar */
+    max-width: 840px;
+    margin: 20px auto; /* Center the search bar */
+
+}
+.container{
+    display: block;
+    width: 550px;
+}
+
+/* Styling for the input field */
+.search_input input {
+    flex: 1; /* Let the input take as much space as it needs */
+    border: none;
+    background: transparent;
+    color: #08023f;
+    font-size: 16px;
+    padding: 10px;
+    outline: none; /* Remove outline on focus */
+}
+
+/* Search Icon style */
+.search_inputIcon {
+    color: #fff; /* White color for the search icon */
+    margin-right: 10px;
+    font-size: 20px; /* Adjust icon size */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8); /* Add subtle white shadow */
+}
+
+/* SVG styling */
+.search_input svg {
+    fill: #08023f; /* White color for the SVG */
+    margin-left: 10px; /* Space between input and SVG */
+    width: 33px;
+    height: 35px;   
+    cursor: pointer; /* Make SVG clickable */
+    transition: transform 0.3s ease; /* Smooth hover animation */
+}
+
+/* Hover effect on SVG */
+.search_input svg:hover {
+    transform: scale(1.1); /* Scale up the SVG when hovered */
+}
+
+/* Placeholder styling */
+.search_input input::placeholder {
+    color: #bbb; /* Lighter text for placeholder */
+    font-style: italic;
+}
+
+/* Focus state for input */
+.search_input input:focus {
+    border-bottom: 2px solid #08023f; /* Highlight input on focus */
+}
+
+.camera_feed {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.camera_feed video {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.search_buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.search_buttons button {
+    margin: 5px;
+    padding: 7px 15px;
+    width: 200px;
+    border-radius: 15px;
+    background-color: #33adc5;
+    border: 1px solid #70ccd0;
+    text-transform: inherit;
+    color: #fff;
+}
+
+.search_buttons button:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #c6c6c6;
+    color: #145766;
+    background-color: #f8f8f8;
+}
+
+.search_buttonsHidden {
+    display: none !important;
+}
+
+@media only screen and (max-width: 554px) {
+    body {
+      background-color: #ca2325;
+      color: #fff;
+    }
+
+    .search_input > input {
+        background-color: #ca2325;
+        color: #fff;
+        padding-left: 7px;
+    }
+    .search_input {
+        display: flex;
+        align-items: center;
+        border: 1px solid lightgray;
+        height: 30px;
+        padding: 10px 20px;
+        border-radius: 999px;
+        width: 75vw;
+        margin: 0 auto;
+        margin-top: 40px;
+        max-width: 90%;
+    }
+    .search_buttons button {
+        border: 1px solid lightgray;
+        background-color: #ca2325;
+        color: #fff;
+    }
+    .search_MicIcon {
+        padding: 10px;
+        visibility: hidden;
+    }
+  }
